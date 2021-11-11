@@ -16,7 +16,7 @@
 .navbar-light .logo-brand {
 	font-size: 30px;
 	font-weight: bold;
-	color: #0c145a;
+	color: #f60165;
 }
 
 .navbar-light .btn-sign-in {
@@ -43,14 +43,14 @@
 	background-color: transparent;
 	transition: all 0.5s ease;
 	line-height: 1;
-	border: 3px solid #ffc500;
-	color: #ffc500;
+	border: 3px solid #f60165;
+	color: #f60165;
 	font-weight: bold;
 	padding: 0.75rem 3rem;
 }
 
 .header .btn-get:hover {
-	background-color: #ffc500;
+	background-color: #f60165;
 	color: #fff;
 	padding: 0.75rem 3rem;
 }

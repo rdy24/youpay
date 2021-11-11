@@ -23,8 +23,8 @@ export default function Navbar() {
 						<ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
 							<Menu title="Home" active />
 							<Menu title="Games" />
-							<Menu title="Rewards" />
-							<Menu title="Discover" />
+							<Menu title="Articles" />
+							<Menu title="About Us" />
 							<Auth />
 						</ul>
 					</div>
