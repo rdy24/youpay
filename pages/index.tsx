@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
+import Head from "next/head";
 import Navbar from "../components/organism/Navbar";
 import MainBanner from "../components/organism/MainBanner";
 import TransactionStep from "../components/organism/TransactionStep";
@@ -14,7 +15,11 @@ export default function Home() {
 	}, []);
 	return (
 		<>
-			<Navbar />
+			<Head>
+				<title>Youpay | Home</title>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			</Head>
+			<Navbar home />
 			<MainBanner />
 			<TransactionStep />
 			<FeaturedGame />

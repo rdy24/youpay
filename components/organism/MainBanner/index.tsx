@@ -12,7 +12,7 @@ export default function MainBanner() {
 						<p className="mt-25 mb-40 text-lg color-palette-1">
 							Top up aman dan nyaman
 							<br className="d-md-block d-none" />
-							Hanya di AkordionGameCorner
+							Hanya di YouPay.id
 						</p>
 						<div className="d-flex flex-lg-row flex-column gap-4">
 							<a

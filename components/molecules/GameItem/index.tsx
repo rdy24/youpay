@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface GameItemProps {
 	title: string;
 	tile: "genshin_tile" | "mlbb_tile" | "valorant_tile" | "coming-soon";
@@ -10,12 +12,9 @@ export default function GameItem(props: GameItemProps) {
 				<img src={`/img/${tile}.png`} alt="..." className="img-game" />
 				<div className="card-body text-center">
 					<h5 className="card-title">{title}</h5>
-					<a
-						href="https://shopee.com/"
-						className="btn btn-top-up rounded-pill px-5"
-					>
-						Top Up
-					</a>
+					<Link href="/detail">
+						<a className="btn btn-top-up rounded-pill px-5">Top Up</a>
+					</Link>
 				</div>
 			</div>
 		</div>

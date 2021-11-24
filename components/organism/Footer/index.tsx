@@ -101,7 +101,7 @@ export default function Footer() {
 												href="mailto: hi@store.gg"
 												className="text-lg color-palette-1 text-decoration-none"
 											>
-												hi@akordiongamecorner.com
+												support@youpay.com
 											</a>
 										</li>
 										<li className="mb-6">
@@ -109,7 +109,7 @@ export default function Footer() {
 												href="mailto: team@store.gg"
 												className="text-lg color-palette-1 text-decoration-none"
 											>
-												team@akordiongamecorner.com
+												team@youpay.com
 											</a>
 										</li>
 										<li className="mb-6">
@@ -118,7 +118,7 @@ export default function Footer() {
                                         Jakarta Selatan"
 												className="text-lg color-palette-1 text-decoration-none"
 											>
-												Pasific 12, Malang
+												Malang
 											</a>
 										</li>
 										<li className="mb-6">

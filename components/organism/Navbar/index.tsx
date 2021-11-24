@@ -3,7 +3,15 @@ import Auth from "./Auth";
 import Menu from "./Menu";
 import ToogleButton from "./ToogleButton";
 
-export default function Navbar() {
+interface TitleProps {
+	home?: boolean;
+	games?: boolean;
+	article?: boolean;
+	about?: boolean;
+}
+
+export default function Navbar(props: Partial<TitleProps>) {
+	const { home, games, article, about } = props;
 	return (
 		<section>
 			<nav className="navbar navbar-expand-lg navbar-light pt-lg-40 pb-lg-40 pt-30 pb-50">
@@ -21,10 +29,10 @@ export default function Navbar() {
 					<ToogleButton />
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
-							<Menu title="Home" active />
-							<Menu title="Games" />
-							<Menu title="Articles" />
-							<Menu title="About Us" />
+							<Menu title="Home" active={home} />
+							<Menu title="Games" active={games} />
+							<Menu title="Articles" active={article} href="/articles" />
+							<Menu title="About Us" active={about} href="/about" />
 							<Auth />
 						</ul>
 					</div>

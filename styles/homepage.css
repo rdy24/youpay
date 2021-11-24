@@ -97,15 +97,15 @@
 	background-color: transparent;
 	transition: all 0.5s ease;
 	line-height: 1;
-	border: 3px solid #ffc500;
-	color: #ffc500;
+	border: 3px solid #f60165;
+	color: #f60165;
 	font-weight: bold;
 	border-radius: 6px;
 }
 
 .featured-game .featured-game-card .card-body .btn-top-up:hover {
 	color: #fff;
-	background-color: #ffc500;
+	background-color: #f60165;
 }
 
 @media (min-width: 768px) {
