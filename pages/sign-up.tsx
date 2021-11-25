@@ -43,7 +43,7 @@ export default function SignUp() {
 					</p>
 					<div className="pt-50">
 						<label
-							for="name"
+							htmlFor="name"
 							className="form-label text-lg fw-medium color-palette-1 mb-10"
 						>
 							Full Name
@@ -59,7 +59,7 @@ export default function SignUp() {
 					</div>
 					<div className="pt-30">
 						<label
-							for="email"
+							htmlFor="email"
 							className="form-label text-lg fw-medium color-palette-1 mb-10"
 						>
 							Email Address
@@ -75,7 +75,7 @@ export default function SignUp() {
 					</div>
 					<div className="pt-30">
 						<label
-							for="password"
+							htmlFor="password"
 							className="form-label text-lg fw-medium color-palette-1 mb-10"
 						>
 							Password
