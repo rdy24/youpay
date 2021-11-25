@@ -32,6 +32,9 @@
 		"jsx-a11y/anchor-is-valid": "off",
 		"jsx-a11y/alt-text": "off",
 		"jsx-a11y/no-redundant-roles": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/self-closing-comp": "off",
+		"object-curly-newline": "off",
 		"indent": 0,
 		"quotes": "off",
 		"no-tabs": 0
