@@ -40,18 +40,18 @@
 }
 
 .header .btn-get {
-	background-color: transparent;
+	background-color: #f60165;
 	transition: all 0.5s ease;
 	line-height: 1;
 	border: 3px solid #f60165;
-	color: #f60165;
+	color: #fff;
 	font-weight: bold;
 	padding: 0.75rem 3rem;
 }
 
 .header .btn-get:hover {
-	background-color: #f60165;
-	color: #fff;
+	background-color: transparent;
+	color: #f60165;
 	padding: 0.75rem 3rem;
 }
 
