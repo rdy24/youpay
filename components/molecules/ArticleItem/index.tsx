@@ -1,25 +1,26 @@
 import Link from "next/link";
 
-export default function ArticleItem() {
-	return (
-		<div className="col-lg-4 mt-5">
-			<div className="card featured-game-card">
-				<img
-					src="https://source.unsplash.com/random/1600x900"
-					className="card-img-top"
-					alt="..."
-				/>
-				<div className="card-body">
-					<h5 className="card-title">Card title</h5>
-					<p className="card-text">
-						Some quick example text to build on the card title and make up the
-						bulk of the cards content.
-					</p>
-					<Link href="/articles/detail">
-						<a className="btn btn-primary">Go somewhere</a>
-					</Link>
-				</div>
-			</div>
-		</div>
-	);
+interface ArticleItemProps {
+  judul: string;
+  excrept: string;
+  image: string;
+  id: string;
+}
+
+export default function ArticleItem(props: ArticleItemProps) {
+  const { judul, excrept, image, id } = props;
+  return (
+    <div className="col-lg-4 mt-5">
+      <div className="card featured-game-card">
+        <img src={`${image}`} className="card-img-top" alt="..." height={200} />
+        <div className="card-body">
+          <h5 className="card-title">{judul}</h5>
+          <p className="card-text">{excrept}</p>
+          <Link href={`/articles/${id}`}>
+            <a className="btn btn-primary">Detail</a>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 }
