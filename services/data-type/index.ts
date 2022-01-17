@@ -1,7 +1,10 @@
 export interface GameItemTypes {
   _id: string;
-  title: string;
-  tile: string;
+  product: {
+    _id: string;
+    game: string;
+    icon: string;
+  };
 }
 
 export interface ArticleItemTypes {
