@@ -1,9 +1,23 @@
 import Head from "next/head";
+import { useCallback, useEffect, useState } from "react";
 import Navbar from "../../components/organism/Navbar";
-import GameItems from "../../components/molecules/GameItems";
+import GameItem from "../../components/molecules/GameItem";
 import Footer from "../../components/organism/Footer";
+import { getFeaturedGame } from "../../services/player";
+import { GameItemTypes } from "../../services/data-type";
 
 export default function games() {
+  const [gameList, setGameList] = useState([]);
+
+  const getFeatureGameList = useCallback(async () => {
+    const data = await getFeaturedGame();
+    setGameList(data);
+  }, [getFeaturedGame]);
+
+  useEffect(() => {
+    getFeatureGameList();
+  }, []);
+  const API_IMG = process.env.NEXT_PUBLIC_IMG;
   return (
     <>
       <Head>
@@ -14,15 +28,14 @@ export default function games() {
       <section className="featured-game pt-50 pb-50">
         <div className="container-fluid">
           <div className="row game-item">
-            <GameItems title="Genshin Impact" tile="genshin_tile" />
-            <GameItems title="Mobile Legend" tile="mlbb_tile" />
-            <GameItems title="Valorant" tile="valorant_tile" />
-            <GameItems title="Coming Soon" tile="coming-soon" />
-            <GameItems title="Coming Soon" tile="coming-soon" />
-            <GameItems title="Coming Soon" tile="coming-soon" />
-            <GameItems title="Coming Soon" tile="coming-soon" />
-            <GameItems title="Coming Soon" tile="coming-soon" />
-            <GameItems title="Coming Soon" tile="coming-soon" />
+            {gameList.map((item: GameItemTypes) => (
+              <GameItem
+                key={item.product._id}
+                title={item.product.game}
+                tile={`${API_IMG}/${item.product.icon}`}
+                id={item._id}
+              />
+            ))}
           </div>
         </div>
       </section>
